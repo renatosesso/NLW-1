@@ -1,0 +1,20 @@
+Rota: Endereço completo da requisição
+Recurso: Qual entidade estamos acessando do sistema
+
+GET: Bscar uma ou mais informações do back-end
+POST: Criar uma nova informação no back-end
+PUT: Atualizar uma informação existente no back-end
+DELETE: Remover uma informação do back-end
+
+POST: http://localhost:3333/users = Criar usuario
+GET: http://localhost:3333/users = Listar usuario
+GET: http://localhost:3333/users/5 = Buscar dados do usuario com ID 5
+
+Request Param: Parametros que vem na própria rota que identificam um Recurso
+Query Param: Parametros que vem na propria rota geralmente opcionais para filtros, paginação
+Request Body: Parametros para criação/atuaçização de informações
+
+SELECT * FROM users WHERE name = 'Renato'
+knex('users').where('name', 'Renato').select('*')
+
+Migrations = Historico do banco de dados
